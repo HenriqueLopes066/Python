@@ -1,6 +1,0 @@
-clientes = ["henrique", "lucas", "gabriell", "pedro"]
-print(clientes[0])
-print(clientes[1])
-print(clientes[2])
-print(clientes[-1])
-
