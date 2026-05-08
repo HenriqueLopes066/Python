@@ -1,4 +1,6 @@
-print("=== LOGIN E SENHA ===")
+print( 50* "=")
+print("LOGIN E SENHA")
+print(50* "=")
 
 LOGIN = "admin"
 SENHA = 1234
