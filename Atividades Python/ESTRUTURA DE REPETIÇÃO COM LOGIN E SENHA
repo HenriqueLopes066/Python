@@ -1,0 +1,25 @@
+print("=== LOGIN E SENHA ===")
+
+LOGIN = "admin"
+SENHA = 1234
+
+while True:
+    
+    LOGIN = str(input("\nDigite seu login: "))
+    SENHA = int(input("\nDigite sua senha: "))
+    
+    if LOGIN == "admin" and SENHA == 1234:
+        print("\nLOGIN E SENHA CORRETO!")
+        break
+        
+    elif LOGIN == "admin" and SENHA != 1234:
+        print("\nSENHA INCORRETA!")
+        break
+        
+    elif LOGIN != "admin" and SENHA == 1234:
+        print("LOGIN INCORRETO!")
+        break
+    
+    else:
+        print("\nLOGIN E SENHA INCORRETOS, FAÇA NOVAMENTE!")
+        
