@@ -1,1 +1,10 @@
+print("================================")
+print("CONVERTENDO REAIS EM DOLAR")
+print("================================")
 
+reais = float (input("\ndigite quantos reais: "))
+cotacao = float (input("digite a cotação do dolar: "))
+
+conversor = reais / cotacao
+
+print("reais em dólar é: ", conversor)
