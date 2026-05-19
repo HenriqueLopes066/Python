@@ -1,4 +1,3 @@
-
 print("============================")
 print("Calcular média")
 print("============================")
@@ -9,5 +8,9 @@ nota2 = int (input("Digite sua segunda nota: "))
 media = (nota1+nota2) / 2
 
 if media >= 7:
-    print(aprovado)
+    print("aprovado")
     
+else:
+    print("reprovado")
+    
+print("Sua média foi de: ", media)
