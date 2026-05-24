@@ -5,7 +5,7 @@ print("======================================")
 
 while True:
 
-numero_secrt = random.randint(1,20)
+    numero_secrt = random.randint(1,20)
 
     
     tentativa = int(input("\nTente adivinhar o número secreto:"))
