@@ -2,7 +2,7 @@ print("===================")
 print("   Temperatura   ")
 print("===================")
 
-temperatura = int(input("Digite a temperatura: "))
+temperatura = int(input("\nDigite a temperatura: "))
 chuva = input("Está chovendo? (s/n): ")
 if temperatura < 15 and chuva == "s":
     print("Está frio e chovendo, use casaco impermeável e bota.")
