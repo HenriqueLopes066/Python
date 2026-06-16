@@ -34,4 +34,4 @@ while True:
 print(" Total de pessoas que foram negadas: ", pessoa_negada)
 print(" Total de pessoas que entraram: ", pessoa_perm) 
 
-print(" lista de pessoas: ", nomes)
+print("\n lista de pessoas: ", nomes)
