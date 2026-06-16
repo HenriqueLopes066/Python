@@ -5,10 +5,11 @@ print("=====================================")
 
 pessoa_perm = 0
 pessoa_negada = 0
+nomes = []
 
 while True:
 
-    nome = str(input("\nDigite seu nome: "))
+    nomes.append(str(input("\nDigite seu nome: ")))
 
     idade = int(input("\nDigite sua idade: "))
 
@@ -31,4 +32,6 @@ while True:
         break
 
 print(" Total de pessoas que foram negadas: ", pessoa_negada)
-print(" Total de pessoas que entraram: ", pessoa_perm)  
+print(" Total de pessoas que entraram: ", pessoa_perm) 
+
+print(" lista de pessoas: ", nomes)
