@@ -2,7 +2,7 @@ print("=======================")
 print("Dobro de um número")
 print("=======================")
 
-numero = int(input("Digite um número: "))
+numero = int(input("\nDigite um número: "))
 
 
 def dobro(numero):
