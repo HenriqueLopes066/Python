@@ -13,6 +13,7 @@ esquerda = 2
 
 while True:
     pedra = random.randint(1, 2)
+    print("Tente chegar na Quinta pedra, mas cuidado para não cair na água!")
     tentativa = int(input(" \nEscolha em qual pedra pular, Digite 1 para Direita e 2 para Esquerda: "))
     
     if tentativa == pedra:
@@ -29,7 +30,7 @@ while True:
     elif tentativa != pedra:
         print("O sapo pulou na pedra errada e caiu na água!")
         pulo = 0
-        print("O sapo voltou a pedra inicial ", pulo)
+        print("O sapo voltou à pedra inicial ", pulo)
 
 
     else:
