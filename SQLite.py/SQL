@@ -1,0 +1,56 @@
+import sqlite3
+
+conexão = sqlite3.connect(":memory:")
+
+cursor = conexão.cursor()
+
+cursor.execute("""
+
+CREATE TABLE alunos (
+
+id INTEGER PRIMARY KEY,
+nome TEXT
+
+)
+
+""")
+
+
+cursor.execute(
+    "INSERT INTO alunos VALUES (1, 'Maria')"
+)
+
+cursor.execute("SELECT * FROM alunos")
+
+
+print(cursor.fetchall())
+
+conexão.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
