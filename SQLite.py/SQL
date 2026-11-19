@@ -9,15 +9,22 @@ cursor.execute("""
 CREATE TABLE alunos (
 
 id INTEGER PRIMARY KEY,
-nome TEXT
+nome TEXT,
+curso TEXT,
+cidade TEXT
 
 )
 
 """)
 
-
 cursor.execute(
-    "INSERT INTO alunos VALUES (1, 'Maria')"
+    "INSERT INTO alunos VALUES"
+    "(1, 'Maria', 'Engenharia', 'Belo Horizonte'),"
+    "(2, 'Henrique', 'Ciências da Computação', 'Vespasiano'),"
+    "(3, 'João', 'Gastronomia', 'Belo Horizonte'),"
+    "(4, 'Ana', 'Medicina', 'Belo Horizonte'),"
+    "(5, 'Pedro', 'Direito', 'Belo Horizonte')"
+
 )
 
 cursor.execute("SELECT * FROM alunos")
