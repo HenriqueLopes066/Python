@@ -1,0 +1,64 @@
+import sqlite3
+
+conexão = sqlite3.connect(":memory:")
+
+cursor = conexão.cursor()
+
+cursor.execute("""
+
+CREATE TABLE produtos (
+
+id INTEGER PRIMARY KEY,
+nome TEXT,
+preco REAL,
+quantidade INTEGER
+
+)
+""")
+
+
+
+
+
+for i in range(3):
+
+    print("===============================")
+
+    id = (int(input("\nDigite o ID do produto: ")))
+
+    nome =(str(input("\nDigite o nome do produto: ")))
+
+    preco =(float(input("\nDigite o preço do produto: ")))
+
+    quantidade =(int(input("\nDigite a quantidade do produto: ")))
+
+
+
+    cursor.execute(
+        "INSERT INTO produtos VALUES"
+    " (?, ?, ?, ?)",
+    (id, nome, preco, quantidade))
+
+
+    cursor.execute("SELECT * FROM produtos")
+
+print("================================")
+print("\nProdutos cadastrados:")
+for id, nome, preco, quantidade in cursor.fetchall():
+
+    print(f"\nO id é: {id}")
+    print(f"\nNome do produto: {nome}")
+    print(f"\nPreço: {preco}")
+    print(f"\nQuantidade: {quantidade}")
+    print("===============================")
+
+conexão.close()
+
+
+
+
+
+
+
+
+
